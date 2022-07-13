@@ -1,22 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Card from './components/card/Card';
 
 function App() {
+  const task = {img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsy8xhpUm5aRgUvmFAb4uRYBtdiYsAI136NQ&usqp=CAU"}
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Card task = { task }></Card>
       </header>
     </div>
   );
