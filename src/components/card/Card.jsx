@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Card = (task) => {
+const Card = ({img}) => {
     return (
         <div>
             <h1>Mi primer componente</h1>
-            <img src = {task.img} alt = 'task' />
+            <img src={img} alt='task'/>
         </div>
     );
 }

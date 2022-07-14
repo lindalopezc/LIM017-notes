@@ -6,6 +6,8 @@
 @use './scss/base/base';
 @use './scss/base/resets';
 
+@use '../src/components/sidebar/sidebar.scss';
+@use '../src/components/sidebar/item/item.scss';
 
 // body {
 //   margin: 0;
