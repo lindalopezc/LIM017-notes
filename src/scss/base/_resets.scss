@@ -17,4 +17,44 @@ button{
     font-family: var(--font-letters);
 }
 
+.sidebar{
+	width: 244px;
+	height: 100vh;
+	background-color: white;
+	.text-logo{
+		font-size: 28px;
+	}
+}
+.navbar{
+	background-color: #735FEE;
+	color:white;
+}
+.project-card img{
+	width: 250px;
+}
+
+.container-projects{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 25%);
+	gap: 25px;
+}
+
+.task{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	width: 267px;
+  height: 274px;
+	border-radius: 10px;
+	
+	img{
+		width: 220x;
+		height: 118px;
+		border-radius: 10px;
+	}
+}
+.date{
+	font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+	color:#918E99
+}
 

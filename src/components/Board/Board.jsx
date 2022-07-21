@@ -1,33 +1,37 @@
 import React from 'react';
+import NavBar from '../NavBar/NavBar';
+import Sidebar from '../Sidebar/Sidebar';
 import Card from './Card/Card';
 
 const Board = () => {
     return (
-        <div>
-            <div>
-                <h1>To do</h1>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
-            </div>
-            <div>
-                <h1>In progress</h1>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
-            </div>
-            <div>
-                <h1>In Review</h1>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
-            </div>
-            <div>
-                <h1>Done</h1>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
-            </div>
+        <div className='d-flex'>
+					<Sidebar></Sidebar>
+					<div className='w-75 d-flex flex-column'>
+						<NavBar></NavBar>
+						<div className='d-flex'>
+							<div className='w-25 container d-flex flex-column'>
+								<p>To do</p>
+								<Card></Card>
+								<Card></Card>
+							</div>
+							<div className='w-25 container d-flex flex-column'>
+								<p>In progress</p>
+								<Card></Card>
+								<Card></Card>
+							</div>
+							<div className='w-25 container d-flex flex-column'>
+								<p>In Review</p>
+								<Card></Card>
+								<Card></Card>
+							</div>
+							<div className='w-25 container d-flex flex-column'>
+								<p>Done</p>
+								<Card></Card>
+								<Card></Card>
+							</div>
+						</div>
+					</div>
         </div>
     );
 }

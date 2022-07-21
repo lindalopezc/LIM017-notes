@@ -2,12 +2,9 @@ import React from 'react';
 
 const NavBar = () => {
     return (
-        <div>
-            <p>Item</p>
-            <p>Barra de búsqueda</p>
-            <p>Img</p>
-            <p>Name</p>
-        </div>
+      <div className='navbar d-flex'>
+        <p>NavBar...</p>
+      </div>
     );
 }
 
