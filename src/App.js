@@ -5,7 +5,7 @@ import Register from '../src/components/Register/Register';
 import Profile from './components/Profile/Profile';
 import RecycleBin from './components/RecycleBin/RecycleBin';
 import Projects from "./components/Projects/Projects";
-import Project from "./components/Projects/Project/Project";
+import Project from "./components/Project/Project";
 import Board from './components/Board/Board';
 
 function App() {
