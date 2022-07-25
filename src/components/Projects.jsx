@@ -1,7 +1,7 @@
 import React from 'react';
-import Sidebar from '../Sidebar/Sidebar';
-import Project from '../Project/Project';
-import NavBar from '../NavBar/NavBar';
+import Sidebar from './Sidebar';
+import Project from './Project';
+import NavBar from './NavBar';
 
 
 const Projects = () => {
