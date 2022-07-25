@@ -1,7 +1,7 @@
 import React from 'react';
-import NavBar from '../NavBar/NavBar';
-import Sidebar from '../Sidebar/Sidebar';
-import Card from '../Card/Card';
+import NavBar from './NavBar';
+import Sidebar from './Sidebar';
+import Card from './Card';
 
 const Board = () => {
     return (

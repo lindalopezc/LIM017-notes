@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import "./index.scss";
-import Login from '../src/components/Login/Login';
-import Register from '../src/components/Register/Register';
-import Profile from './components/Profile/Profile';
-import RecycleBin from './components/RecycleBin/RecycleBin';
-import Projects from "./components/Projects/Projects";
-import Project from "./components/Project/Project";
-import Board from './components/Board/Board';
+import Login from '../src/components/Login';
+import Register from '../src/components/Register';
+import Profile from './components/Profile';
+import RecycleBin from './components/RecycleBin';
+import Projects from "./components/Projects";
+import Project from "./components/Project";
+import Board from './components/Board';
 
 function App() {
   return (
