@@ -13,8 +13,10 @@ const Register = () => {
               <form onSubmit = {handleSubmit(onSubmit)} className='d-flex flex-column'>
                 <h1>Sign Up</h1>
                 <p>aqui va un texto</p>
-								<label htmlFor="userName">Name: <input type="text" id="userName" {...register("userName")}/></label>
-                <label htmlFor="email">Email: <input type="text" id="email" {...register("email")}/></label>
+								<label htmlFor="userName"/>Name: 
+								<input type="text" id="userName" {...register("userName")}/>
+                <label htmlFor="email"/>Email: 
+								<input type="text" id="email" {...register("email")}/>
                 <label htmlFor="password"/>Password:
                 <input type="password" id="password" {...register("password")}/>
                 <input type="submit" value="Sign up"/>
