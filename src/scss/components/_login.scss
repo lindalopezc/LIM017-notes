@@ -1,5 +1,71 @@
 .login{
 	height: 100vh;
-	justify-content: space-around;
+	display: flex;
 	align-items: center;
+	justify-content: center; 
+	h1{
+			align-self: center;
+	}
+	p{
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		text-align: center;
+		color: $font-secondary-color;
+	}
+	form{
+		width: 90%;
+		min-width: 290px;
+		max-width: 350px;
+	}
+	.logo{
+		@include logo;
+		align-self: center;
+	}
+	.google{
+		@include google-logo;
+	}
+	.img-kamban{
+		@include kamban;
+	}
+	a{
+		color: $primary-color
+	}
+	&_kamban{
+			display: none;
+			width: 50%;
+	}
+	&_form{
+			width: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+	}
+	&__inputs{
+			@include inputs;
+	}
+	&__button--submit{
+		 @include button;
+	}
+	&__button--google{
+			box-sizing: border-box;
+			height: 50px;
+			width: 100%;
+			background: #FFFFFF;
+			border: 1px solid #A8A5B6;
+			border-radius: 10px;
+			margin-bottom: 15px;
+			color: $font-secondary-color;
+ }
+}
+
+@media (min-width: 768px) and (orientation: landscape){
+	.login{
+			&_kamban{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: 500px;
+			}
+	}
 }

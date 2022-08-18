@@ -1,20 +1,20 @@
 @mixin inputs{
-    border-color: transparent;
-    height: 45px;
-    width: 100%;
-    background-color: $background-color-inputs;
-    border-radius: 10px;
-		margin-bottom: 15px;
-		padding: 10px;
+	border-color: transparent;
+	height: 45px;
+	width: 100%;
+	background-color: $background-color-inputs;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	padding: 10px;
 }
 @mixin button{
-		border-color: transparent;
-		height: 50px;
-		width: 100%;
-		background-color: $primary-color;
-		color: white;
-		border-radius: 10px;
-		margin-bottom: 15px;
+	border-color: transparent;
+	height: 50px;
+	width: 100%;
+	background-color: $primary-color;
+	color: white;
+	border-radius: 10px;
+	margin-bottom: 15px;
 }
 @mixin logo {
 	width: 55px;

@@ -35,7 +35,7 @@ const Register = () => {
                 <input className="register__inputs" type="password" id="userPassword" {...register("userPassword")}/>
               </div>
               <input className="register__button--submit" type="submit" value="Sign up"/>
-              <button className="register__button--google"><img className="google" alt="google" src={google}/> Sign in with Google</button>
+              <button className="register__button--google"><img className="google" alt="google" src={google}/> Sign up with Google</button>
               <p>Do you have an account? <span><a href="#"> Sign In</a></span></p>
             </form>
           </section>
