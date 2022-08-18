@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import "./index.scss";
+import "./scss/style.scss";
 import Login from '../src/components/Login';
 import Register from '../src/components/Register';
 import Profile from './components/Profile';

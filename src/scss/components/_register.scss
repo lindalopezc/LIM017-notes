@@ -1,44 +1,71 @@
-li{
-    list-style: none;
+.register{
+		height: 100vh;
+		display: flex;
+    align-items: center;
+		justify-content: center; 
+		h1{
+				align-self: center;
+		}
+		p{
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			text-align: center;
+			color: $font-secondary-color;
+		}
+		form{
+			width: 90%;
+			min-width: 290px;
+			max-width: 350px;
+		}
+		.logo{
+			@include logo;
+			align-self: center;
+		}
+		.google{
+			@include google-logo;
+		}
+		.img-kamban{
+			@include kamban;
+		}
+		a{
+			color: $primary-color
+		}
+		&_kamban{
+				display: none;
+				width: 50%;
+		}
+		&_form{
+				width: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+		}
+		&__inputs{
+				@include inputs;
+		}
+		&__button--submit{
+			 @include button;
+		}
+		&__button--google{
+				box-sizing: border-box;
+				height: 50px;
+				width: 100%;
+				background: #FFFFFF;
+				border: 1px solid #A8A5B6;
+				border-radius: 10px;
+				margin-bottom: 15px;
+				color: $font-secondary-color;
+	 }
 }
 
-a{
-    text-decoration: none;
-}
-button{
-    border: none;
-    background: none;
-    font-family: $font-letters;
-}
-
-.project-card img{
-	width: 250px;
-}
-
-.container-projects{
-	display: grid;
-	grid-template-columns: repeat(auto-fill, 25%);
-	gap: 25px;
-}
-
-.task{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-	width: 267px;
-    height: 274px;
-	border-radius: 10px;
-	
-	img{
-		width: 220x;
-		height: 118px;
-		border-radius: 10px;
+@media (min-width: 768px) and (orientation: landscape){
+	.register{
+			&_kamban{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: 500px;
+			}
 	}
 }
-.date{
-	font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-	color:#918E99
-}
-
-
-
