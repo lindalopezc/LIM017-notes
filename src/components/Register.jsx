@@ -11,10 +11,10 @@ const Register = () => {
     }
     return (
       <div className="register d-flex">
-        <section className="register_kamban">
+        <section className="register__kamban">
           <img className="img-kamban" alt="kamban" src={kamban}/>
         </section> 
-        <section className="register_form">
+        <section className="register__form">
             <form onSubmit = {handleSubmit(onSubmit)} className='d-flex flex-column'>
               <img className="logo" alt="logo" src={logo}/>
               <h1>Sign up</h1>
