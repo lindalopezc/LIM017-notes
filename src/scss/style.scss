@@ -1,0 +1,18 @@
+//abstracts
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+//base
+@import './base/base';
+@import './base/resets';
+
+//components
+@import './components/register';
+@import './components/board';
+@import './components/card';
+@import './components/navbar';
+@import './components/sidebar';
+@import './components/login';
+@import './components/card';
+@import './components/project';
+@import './components/projects';
