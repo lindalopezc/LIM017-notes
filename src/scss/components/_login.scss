@@ -31,11 +31,11 @@
 	a{
 		color: $primary-color
 	}
-	&_kamban{
+	&__kamban{
 			display: none;
 			width: 50%;
 	}
-	&_form{
+	&__form{
 			width: 50%;
 			display: flex;
 			align-items: center;

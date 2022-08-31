@@ -11,10 +11,10 @@ const Login = () => {
     }
     return (
         <div className='login d-flex'>
-           <section className="login_kamban">
+           <section className="login__kamban">
           <img className="img-kamban" alt="kamban" src={kamban}/>
         </section> 
-        <section className="login_form">
+        <section className="login__form">
             <form onSubmit = {handleSubmit(onSubmit)} className='d-flex flex-column'>
               <img className="logo" alt="logo" src={logo}/>
               <h1>Sign in</h1>
