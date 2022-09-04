@@ -2,12 +2,16 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import logo from '../assets/logo.png';
 import google from '../assets/google.png';
-import kamban from '../assets/img-kamban.png'
+import kamban from '../assets/img-kamban.png';
+import { GoogleLogin } from 'react-google-login';
 
 const Register = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
         console.log(typeof data);
+    }
+    const responseGoogle = (response) => {
+      console.log(response);
     }
     return (
       <div className="register d-flex">
@@ -35,7 +39,18 @@ const Register = () => {
                 <input className="register__inputs" type="password" id="userPassword" {...register("userPassword")}/>
               </div>
               <input className="register__button--submit" type="submit" value="Sign up"/>
-              <button className="register__button--google"><img className="google" alt="google" src={google}/> Sign up with Google</button>
+              <GoogleLogin
+              clientId="8237606553-i7hjdtc207sla1l79h0hrisau9o0u3v6.apps.googleusercontent.com"
+              buttonText="Login"
+              onSuccess={responseGoogle}
+              onFailure={responseGoogle}
+              cookiePolicy={'single_host_origin'}
+              render={renderProps => (
+                <button className="register__button--google" onClick={renderProps.onClick} disabled={renderProps.disabled}>
+                <img className="google" alt="google" src={google}/> Sign up with Google
+                </button>
+              )}
+              />
               <p>Do you have an account? <span><a href="#"> Sign In</a></span></p>
             </form>
           </section>
