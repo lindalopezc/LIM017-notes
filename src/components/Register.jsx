@@ -9,7 +9,7 @@ import { Link, useNavigate } from "react-router-dom";
 const Register = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
-        console.log('data del form', data);
+        console.log('data de register', data);
     }
     const navigate = useNavigate();
     const responseGoogle = (response) => {
