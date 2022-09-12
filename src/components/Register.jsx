@@ -4,13 +4,16 @@ import logo from '../assets/logo.png';
 import google from '../assets/google.png';
 import kamban from '../assets/img-kamban.png';
 import { GoogleLogin } from 'react-google-login';
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
-        console.log(typeof data);
+        console.log('data del form', data);
     }
+    const navigate = useNavigate();
     const responseGoogle = (response) => {
+      navigate("/projects")
       console.log(response);
     }
     return (
@@ -41,9 +44,8 @@ const Register = () => {
               <input className="register__button--submit" type="submit" value="Sign up"/>
               <GoogleLogin
               clientId="8237606553-i7hjdtc207sla1l79h0hrisau9o0u3v6.apps.googleusercontent.com"
-              buttonText="Login"
               onSuccess={responseGoogle}
-              onFailure={responseGoogle}
+              // onFailure={responseGoogle}
               cookiePolicy={'single_host_origin'}
               render={renderProps => (
                 <button className="register__button--google" onClick={renderProps.onClick} disabled={renderProps.disabled}>
@@ -51,7 +53,7 @@ const Register = () => {
                 </button>
               )}
               />
-              <p>Do you have an account? <span><a href="#"> Sign In</a></span></p>
+              <p>Do you have an account? <span><Link to="/"> Sign In</Link></span></p>
             </form>
           </section>
         </div>
